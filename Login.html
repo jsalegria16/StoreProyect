@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Create a new password</title>
+    <title>Login</title>
     <style>
 
         /*
@@ -63,21 +63,6 @@
             display: none; /*EN pc no tiene que aparecer, en mobile sí.*/
         }
 
-        .TittleoForm {
-            font-size: var(--lg);
-
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .Subtitile{
-
-            margin-top: 15px;
-            margin-bottom: 40px;
-            font-size: var(--sm);
-            text-align: center;
-
-        }
 
         .form{
            display: flex;
@@ -109,7 +94,7 @@
             margin-top: 20px;
             margin-bottom: 20px;
             height: 40px;
-            width: auto;
+            width: 100%;
 
             border-radius: 8px;
             border: none;
@@ -120,10 +105,31 @@
 
             cursor: pointer;
         }
+
+        .PrimaryButton.SignUpButton{
+            margin-top: 95px;
+            color: #000000;
+            background-color: var(--very-light-pink);
+            border: 2px solid black;
+        }
+
+        .ForgotPasswordParagraph{
+            font-size: var(--sm);
+        }
+
+        .ForgotPasswordParagraph a{
+            color: #0f2394;
+            font-weight: bolder;
+            text-decoration: none;/*Quitar la liena del hiper*/
+        }
+
         
         @media (max-width: 640px) {
             .LogLogin{
                 display: block;
+            }
+            .PrimaryButton.SignUpButton{
+                margin-top: 10px;
             }
         }
         /*Osea que para valores inferiores a 640px, colocar el logo*/
@@ -140,22 +146,29 @@
             <img src="./logs/fondo-loginstore.jpg" alt="Log" class="LogLogin">
 
 
-            <h1 class="TittleoForm">Create a New Password </h1>
-            <p class="Subtitile"> Enter a new password for your account</p>
 
             <form action="" class="form">
 
+                <label for="email" class="PasswordLabel"> E-mail </label>
+                <input type="email" class="input PasswordInput" placeholder="user@domain." >
+
                 <label for="password" class="PasswordLabel"> Password </label>
-                <input type="password" class="input PasswordInput" placeholder="write your old password" >
-
-                <label for="password" class="PasswordLabel"> New Password </label>
-                <input type="password" i class="input PasswordInput" placeholder="write you new password" >
+                <input type="password" i class="input PasswordInput" placeholder="write your password" >
 
 
-                <input type="submit" value="Confirm" class="PrimaryButton LoginButton">
+                <input type="submit" value="Log In" class="PrimaryButton LoginButton">
                 
             
             </form>
+
+            <p class="ForgotPasswordParagraph"> 
+                <strong> You have forgot your password? </strong> 
+                <a href="/CreatePassword.html"> Click here to Create a new one</a>
+            </p>
+
+            <button class="PrimaryButton SignUpButton"> Sign Up </button>
+
+
 
 
         </div>
