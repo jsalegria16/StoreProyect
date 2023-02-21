@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
-    <title>Create a new password</title>
+    <title>Initial Page</title>
     <style>
 
         /*
@@ -34,10 +34,85 @@
             /*Estas cosas son variables*/
           }
 
-          body {
+        body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
         }
+
+        .CardsContainer{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 300px); /*PAra que cada celdita de un producto se ajuste automáticamente al anchos de la pestaña*/
+            place-content: center;
+            margin-top: 20px;
+            gap: 10px;
+
+            
+        }
+
+        .ProductCard {
+            width: 250px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .ProductCard > img{
+            width: 100%;
+            border-radius: 20px;
+            object-fit: cover; /*PAra que no se deforme la imagen con los nuevos width*/
+        }
+
+        .ProductInfo{
+            display: flex;
+            justify-content: space-between;/*Para que queden uno al lado del otro*/
+            align-items: center;
+        }
+
+        .ProductCard .ProductInfo figure img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+
+        .ProductInfo figure {
+            margin-left: 0;
+        }
+
+        .ProductInfo p:nth-child(1){
+
+            margin-bottom: 4px;
+            font-weight: bolder;
+            font-size: var(--lg);
+            color: #000000;
+        }
+        .ProductInfo p:nth-child(2){
+
+            margin-top: 1px;
+            font-weight: bolder;
+            font-size: var(--sm);
+            color:brown;
+        }
+
+        @media (max-width: 640px) {
+            .CardsContainer{
+                grid-template-columns: repeat(2, 155px); /*PAra que cada celdita de un producto se ajuste automáticamente al anchos de la pestaña*/   
+                gap: 20px;
+            }
+            .ProductCard {
+                width: 150px;
+                border: 1px solid black;
+                padding: 2px;
+            }
+            .ProductCard > img{
+                width: 100%;
+                border-radius: 20px;
+                object-fit: cover; /*PAra que no se deforme la imagen con los nuevos width*/
+            }
+            .ProductInfo figure {
+                margin-right:0%;
+            }
+        }
+
+
 
     </style>
 </head>
@@ -47,237 +122,262 @@
 
         <div class="CardsContainer"> 
             <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
+                <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+                <div class="ProductInfo">
+                    <div>
+                        <p> 120,0 #</p>
+                        <p> Mega Car</p>
+                    </div>
+                    <figure > 
+                        <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                    </figure>
 
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
                 </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
 
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
-
-            <div class="ProductCard">
-                <img src="./icons/Product1.png" alt="Product" class="ProductIMG">
-                <div>
-                    <p> 120,0 #</p>
-                    <p> Mega Car</p>
-                </div>
-                <figure> 
-                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
-                </figure>
-            </div>
         </div>
 
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+        <div class="ProductCard">
+            <img src="./icons/Product11.png" alt="Product" class="ProductIMG">
+            <div class="ProductInfo">
+                <div>
+                    <p> 120,0 #</p>
+                    <p> Mega Car</p>
+                </div>
+                <figure > 
+                    <img src="./icons/AddLittleCar.png" alt="IconAddLittleCar">
+                </figure>
+
+            </div>
+
+        </div>
+
+
+        
     </section>
     
 </body>
