@@ -38,6 +38,93 @@
             font-family: 'Quicksand', sans-serif;
         }
 
+        .MyOrder{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+
+        }
+
+        
+
+        .MyOrderContainer{
+            width:400px;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+
+        .Tittle{
+            text-align: center;
+            font-size: var(--lg);
+            margin-bottom: 50px;
+        }
+
+        .MyOrderInfo{
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            
+            padding: 20px;
+
+            background-color: var(--text-input-field);
+            align-items: center;
+            
+        }
+
+        .MyOrderInfo p:nth-child(1){
+            font-size: var(--md);
+            color: #000000;
+            font-weight: bold;
+
+        }
+
+        .MyOrderInfo p:nth-child(2){
+
+            font-size: var(--sm);
+            color: brown;
+
+        }
+
+        .MyOrderInfo p:nth-child(3){
+
+            font-size: var(--lg);
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        .ShoppingCards p:nth-child(2){
+            color: rgb(162, 51, 51);
+        }
+
+        .ShoppingCards p:nth-child(3){
+            font-size: var(--md);
+          font-weight: bolder;
+        }
+
+        .ShoppingCards {
+
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: auto 1fr auto auto;
+            gap: 16px;
+            align-items: center; /*Centrar verticalmente*/
+            place-items: center; /*Centrar horizontalmente*/
+        } 
+
+        .ShoppingCards figure img{
+            width: 100px;
+            height: 70px;
+            border-radius: 15px;
+        }
+
+        .ShoppingCards figure{
+           margin: 0%;
+        }
+
+
+
     </style>
 </head>
 <body>
@@ -46,15 +133,17 @@
 
         <div class="MyOrderContainer">
 
+            <h1 class="Tittle"> My Order </h1>
+
             <div class="MyOrderInfo">
                 <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
+                    Date
                 </p>
+
+                <p>
+                    Total things 
+                </p>
+
                 <p>
                     Total Price
                 </p>
@@ -75,22 +164,64 @@
 
             </div>
 
-        </div>
+            <div class="ShoppingCards">
 
-        <div class="MyOrderContainer">
+                <figure>
+                    <img src="/icons/Product11.png" alt="Cosa comprada">
+                </figure>
 
-            <div class="MyOrderInfo">
                 <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
+                    Artículo comprado
                 </p>
                 <p>
-                    Total Price
+                    Price
                 </p>
+
+            </div>
+
+            <div class="ShoppingCards">
+
+                <figure>
+                    <img src="/icons/Product11.png" alt="Cosa comprada">
+                </figure>
+
+                <p>
+                    Artículo comprado
+                </p>
+                <p>
+                    Price
+                </p>
+
+            </div>
+
+            <div class="ShoppingCards">
+
+                <figure>
+                    <img src="/icons/Product11.png" alt="Cosa comprada">
+                </figure>
+
+                <p>
+                    Artículo comprado
+                </p>
+                <p>
+                    Price
+                </p>
+
+            </div>
+
+            <div class="ShoppingCards">
+
+                <figure>
+                    <img src="/icons/Product11.png" alt="Cosa comprada">
+                </figure>
+
+                <p>
+                    Artículo comprado
+                </p>
+                <p>
+                    Price
+                </p>
+
             </div>
 
             <div class="ShoppingCards">
@@ -109,339 +240,6 @@
             </div>
 
         </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="MyOrderContainer">
-
-            <div class="MyOrderInfo">
-                <p>
-                    <Span>
-                        Date
-                    </Span>
-                    <span> 
-                        Total things 
-                    </span>
-                </p>
-                <p>
-                    Total Price
-                </p>
-            </div>
-
-            <div class="ShoppingCards">
-
-                <figure>
-                    <img src="/icons/Product11.png" alt="Cosa comprada">
-                </figure>
-
-                <p>
-                    Artículo comprado
-                </p>
-                <p>
-                    Price
-                </p>
-
-            </div>
-
-        </div>
-
-
 
 
     </div>
